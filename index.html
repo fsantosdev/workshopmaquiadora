@@ -45,6 +45,7 @@
 		.row-one .col{ width: 60%; }
 		.clear { clear: both; }
 		.text-center { text-align: center; }
+		.col.text-center { padding-right: 50px; }
 		h2 {
 			font-weight: bold;
 			font-size: 32px;
@@ -69,9 +70,37 @@
 		}
 		.footer .description { color: #757486; font-size: 16px; }
 
+		.container #main-form  form {
+		    border-radius: 26px!important;
+		    box-shadow: 0 0 25px 0 #fff;
+		    padding: 30px;
+			width: 100%;
+			margin: 0;
+		}
+		.container #main-form ._form ._form-content ._form_element input[type=text] {
+			background-color: #d4d4d4;
+		    border-width: 0;
+		    border-radius: 32px 32px 32px 32px;
+		    padding: 15px;
+		}
+		.container #main-form ._form ._form-content ._form_element ._form-label { display: none; }
+		.container #main-form ._form ._form-branding { display: none; }
+
+		.container #main-form ._form ._form-content ._button-wrapper ._submit {
+		    background-color: #e00078!important;
+		    text-transform: uppercase;
+		    padding: 15px 30px!important;
+		    font-size: 19px;
+		    font-weight: 500;
+		    border-radius: 32px!important;
+		    width: 100%;
+    		color: #fff;
+		}
+
 		@media only screen and (max-width: 748px) {
 			.container { width: 100%; padding: 30px 15px; }
 			.row-one .col, .row-one .col:first-child, .col { float: none; width: 100%; text-align: center }
+			.col.text-center { float: right; }
 		}
 	</style>
 
@@ -105,7 +134,10 @@
 					Teremos uma comunidade exclusiva no Facebook, em que você poderá assistir e discutir sobre as aulas do Workshop Vou Ser Maquiadora, fazer perguntas e tirar dúvidas com o meu suporte, e melhor, interagir com os outros participantes. Ou seja, você poderá se conectar com outras pessoas que estão ali, com o mesmo objetivo, buscando os mesmos resultados.
 				</p>
 			</div>
-			<div class="col"></div>
+			<div class="col">
+				<div class="_form_74" id="main-form"></div>
+				<script src="https://amandanavesfl.activehosted.com/f/embed.php?id=74" type="text/javascript" charset="utf-8"></script>
+			</div>
 		</div>
 	</div>
 	<div class="row footer">
