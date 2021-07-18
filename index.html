@@ -2,10 +2,12 @@
 <html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Cache-control" content="public">
 	<title>Workshop Vou Ser Maquiadora</title>
 	<style>
-		*,::after,::before{box-sizing:border-box}ol[class],ul[class]{padding:0}blockquote,body,dd,dl,figcaption,figure,h1,h2,h3,h4,li,ol[class],p,ul[class]{margin:0}body{min-height:100vh;scroll-behavior:smooth;text-rendering:optimizeSpeed;line-height:1.5}ol[class],ul[class]{list-style:none}a:not([class]){text-decoration-skip-ink:auto}img{max-width:100%;display:block}article>*+*{margin-top:1em}button,input,select,textarea{font:inherit}@media (prefers-reduced-motion:reduce){*{animation-duration:0s!important;animation-iteration-count:1!important;transition-duration:0s!important;scroll-behavior:auto!important}}
+		*,::after,::before{box-sizing:border-box}ol[class],ul[class]{padding:0}blockquote,body,dd,dl,figcaption,figure,h1,h2,h3,h4,li,ol[class],p,ul[class]{margin:0}body{min-height:100vh;scroll-behavior:smooth;text-rendering:optimizeSpeed;line-height:1.5}ol[class],ul[class]{list-style:none}a:not([class]){text-decoration-skip-ink:auto}img{max-width:100%;display:inline-block}article>*+*{margin-top:1em}button,input,select,textarea{font:inherit}@media (prefers-reduced-motion:reduce){*{animation-duration:0s!important;animation-iteration-count:1!important;transition-duration:0s!important;scroll-behavior:auto!important}}
+		html, body { min-height: 100%; width: 100%; }
 		body {
 			background: url(bg.webp) 0 0 no-repeat;
 			background-size: cover;
@@ -15,7 +17,7 @@
 		}
 		.container {
 			margin: 0 auto;
-			padding:  23% 25px 0;
+			padding:  20% 25px 0;
 			width: 750px;
 		}
 		.logo {
@@ -52,24 +54,14 @@
 			font-size: 26px;
 			font-weight: 300;
 		}
-	</style>
-	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-	<script>
-		function ReLoadImages(){
-		    $('img[data-lazysrc]').each( function(){
-		        //* set the img src from data-src
-		        $( this ).attr( 'src', $( this ).attr( 'data-lazysrc' ) );
-		        }
-		    );
-		}
 
-		document.addEventListener('readystatechange', event => {
-		    if (event.target.readyState === "interactive") {  //or at "complete" if you want it to execute in the most last state of window.
-		        ReLoadImages();
-		    }
-		});
-	</script>
-	<script>
+		@media only screen and (max-width: 748px) {
+			.container { width: 100%; padding: 30px 15px; }
+			.row-one .col, .row-one .col:first-child, .col { float: none; width: 100%; text-align: center }
+		}
+	</style>
+
+	<script type="text/javascript">
 		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -80,7 +72,7 @@
 <body>
 	<div class="container">
 		<div class="row row-one">
-			<div class="col"><img src="logo.webp" alt="" class="logo"></div>
+			<div class="col"><img async src="logo.webp" alt="" class="logo"></div>
 			<div class="col">
 				<p class="description">
 					Em 4 dias intensivos de aula, você vai aprender como conseguir <strong>6 ANOS de experiência como maquiadora em apenas 30 dias</strong>, e finalmente conseguir sua independência financeira.
@@ -93,7 +85,7 @@
 				<h2>09 A 15 DE AGOSTO</h2>
 				<h3>Online e Gratuito | Evento ao vivo</h3>
 
-				<img src="ico-facebook.webp" alt="">
+				<img async src="ico-facebook.webp" alt="">
 				<h4>COMUNIDADE EXCLUSIVA</h4>
 				<p class="disclaimer">
 					Teremos uma comunidade exclusiva no Facebook, em que você poderá assistir e discutir sobre as aulas do Workshop Vou Ser Maquiadora, fazer perguntas e tirar dúvidas com o meu suporte, e melhor, interagir com os outros participantes. Ou seja, você poderá se conectar com outras pessoas que estão ali, com o mesmo objetivo, buscando os mesmos resultados.
