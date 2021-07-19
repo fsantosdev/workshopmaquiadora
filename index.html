@@ -97,6 +97,9 @@
     		color: #fff;
 		}
 
+		.hide-mobile { display: block; }
+		.show-mobile { display: none; }
+
 		@media only screen and (max-width: 748px) {
 			body { height: auto; }
 			.container { width: 100%; padding: 30px 15px; }
@@ -106,6 +109,9 @@
 			.form-row   { display: table; }
 			.form-row .col.text-center  { display: table-footer-group; }
 			.form-row .col { display: table-header-group; }
+
+			.hide-mobile { display: none; }
+			.show-mobile { display: block; }
 		}
 	</style>
 
@@ -130,8 +136,8 @@
 		</div>
 		<div class="row form-row">
 			<div class="col text-center">
-				<h2>09 A 15 DE AGOSTO</h2>
-				<h3>Online e Gratuito | Evento ao vivo</h3>
+				<h2 class="hide-mobile">09 A 15 DE AGOSTO</h2>
+				<h3 class="hide-mobile">Online e Gratuito | Evento ao vivo</h3>
 
 				<img src="logo-facebook.webp" alt="" loading="lazy" height="62px" width="62px">
 				<h4>COMUNIDADE EXCLUSIVA</h4>
@@ -140,6 +146,8 @@
 				</p>
 			</div>
 			<div class="col">
+				<h2 class="show-mobile">09 A 15 DE AGOSTO</h2>
+				<h3 class="show-mobile" style="margin-bottom: 30px;">Online e Gratuito | Evento ao vivo</h3>
 				<div class="_form_74" id="main-form"></div>
 				<script src="https://amandanavesfl.activehosted.com/f/embed.php?id=74" type="text/javascript" charset="utf-8"></script>
 			</div>
